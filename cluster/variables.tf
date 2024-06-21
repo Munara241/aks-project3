@@ -23,19 +23,6 @@ variable "dns_prefix" {
   default = "aksk8s"
 }
 
-# # Refer to https://azure.microsoft.com/global-infrastructure/services/?products=monitor for available Log Analytics regions.
-# variable "log_analytics_workspace_location" {
-#   default = "West Europe"
-# }
-
-# variable "log_analytics_workspace_name" {
-#   default = "testLogAnalyticsWorkspaceName"
-# }
-
-# # Refer to https://azure.microsoft.com/pricing/details/monitor/ for Log Analytics pricing
-# variable "log_analytics_workspace_sku" {
-#   default = "PerGB2018"
-# }
 
 variable "resource_group_location" {
   default     = "Central US"
