@@ -1,17 +1,29 @@
 # aks-project3
 ```
-# create terraform.tfvars file
+1. Install Azure CLI
+2. login to Azure with command:
+     az login
+3. Get Subsciption ID:
+    az account list --output table
 
-aks_service_principal_app_id        = ""
-aks_service_principal_client_secret = "" 
+4. To get the credentials run the command:
 
-# create .connection.env file (hidden file)
+   az ad sp create-for-rbac
+You will get the output to use create the
+.connection.env and terraform.tfvars files.
 
-export ARM_CLIENT_ID=""
-export ARM_CLIENT_SECRET=""
-export ARM_SUBSCRIPTION_ID=""
-export ARM_TENANT_ID=""
+     # create terraform.tfvars file
 
-and run command source .connection.env
+     aks_service_principal_app_id        = ""
+     aks_service_principal_client_secret = "" 
+
+     # create .connection.env file (hidden file) and add your credencials
+     export ARM_CLIENT_ID=""
+     export ARM_CLIENT_SECRET=""
+     export ARM_SUBSCRIPTION_ID=""
+     export ARM_TENANT_ID=""
+
+and run the command source .connection.env to activate the .env file.
+After all this steps you can run Terraform Configuration.
 
 ```
