@@ -9,8 +9,10 @@
 4. To get the credentials run the command:
 
    az ad sp create-for-rbac
-You will get the output to use create the
-.connection.env and terraform.tfvars files.
+You will get the output:"The output includes credentials that you must protect. Be sure that you do not include these credentials in your code or check the credentials into your source control."
+ Use it to create the
+.connection.env
+ terraform.tfvars files.
 
      # create terraform.tfvars file
 
