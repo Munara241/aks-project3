@@ -32,6 +32,16 @@ and run the command:
  source .connection.env
   to activate the .env file.
 
+ To deploy the Kubernetes cluster, we must first initialize the backend, modules, and provider plugins that we defined in our code.
+
+ commands:
+ terraform init
+ terraform fmt (to make our code nicer)
+ terraform plan
+ terraform apply 
+
 # After all this steps you can run Terraform Configuration.
+
+kubectl -n kubernetes-dashboard create token admin-user
 
 ```
