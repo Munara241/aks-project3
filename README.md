@@ -40,7 +40,7 @@ and run the command:
  terraform plan
  terraform apply 
 
-# After all this steps you can run Terraform Configuration.
+# After all this steps you can run this coomand to get the token.
 
 kubectl -n kubernetes-dashboard create token admin-user
 
